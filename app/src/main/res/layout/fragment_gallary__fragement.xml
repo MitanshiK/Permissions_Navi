@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gallary_Fragement">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:text="Gallary"/>
+
+   <ImageView
+       android:id="@+id/gallaryImg"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/demo_img"
+       android:layout_gravity="center"
+       android:layout_margin="30dp"/>
+
+</FrameLayout>

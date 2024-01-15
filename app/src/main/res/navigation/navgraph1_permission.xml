@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph1_permission"
+    app:startDestination="@id/main_fragement3">
+
+    <fragment
+        android:id="@+id/permission_Fragment4"
+        android:name="com.example.permissionsnavi.Permission_Fragment"
+        android:label="fragment_permission_"
+        tools:layout="@layout/fragment_permission_" />
+    <fragment
+        android:id="@+id/camera_Fragement3"
+        android:name="com.example.permissionsnavi.Camera_Fragement"
+        android:label="fragment_camera__fragement5"
+        tools:layout="@layout/fragment_camera__fragement5" />
+    <fragment
+        android:id="@+id/main_fragement3"
+        android:name="com.example.permissionsnavi.main_fragement"
+        android:label="fragment_main_fragement"
+        tools:layout="@layout/fragment_main_fragement" >
+        <action
+            android:id="@+id/action_main_fragement3_to_permission_Fragment4"
+            app:destination="@id/permission_Fragment4" />
+        <action
+            android:id="@+id/action_main_fragement3_to_camera_Fragement3"
+            app:destination="@id/camera_Fragement3" />
+        <action
+            android:id="@+id/action_main_fragement3_to_storage_fragement2"
+            app:destination="@id/storage_fragement2" />
+        <action
+            android:id="@+id/action_main_fragement3_to_gallary_Fragement4"
+            app:destination="@id/gallary_Fragement4" />
+        <action
+            android:id="@+id/action_main_fragement3_to_contacts_fragement"
+            app:destination="@id/contacts_fragement" />
+    </fragment>
+    <fragment
+        android:id="@+id/storage_fragement2"
+        android:name="com.example.permissionsnavi.Storage_fragement"
+        android:label="fragment_storage_fragement"
+        tools:layout="@layout/fragment_storage_fragement" />
+    <fragment
+        android:id="@+id/gallary_Fragement4"
+        android:name="com.example.permissionsnavi.Gallary_Fragement"
+        android:label="fragment_gallary__fragement"
+        tools:layout="@layout/fragment_gallary__fragement" />
+    <fragment
+        android:id="@+id/contacts_fragement"
+        android:name="com.example.permissionsnavi.Contacts_fragement"
+        android:label="fragment_contacts_fragement"
+        tools:layout="@layout/fragment_contacts_fragement" />
+</navigation>
